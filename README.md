@@ -10,6 +10,7 @@
 - Круговая диаграмма расходов по категориям
 - Экспорт в CSV
 - Данные сохраняются после перезагрузки страницы
+<img width="997" height="427" alt="image" src="https://github.com/user-attachments/assets/5e3d5387-4efa-4c4c-9ff7-fb1b27b4f044" />
 
 
 <img width="1154" height="678" alt="image" src="https://github.com/user-attachments/assets/493b9a31-2f32-48e8-ad8b-ed095268b021" />
