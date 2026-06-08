@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шығын — трекер расходов</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <header>
+    <h1>Шығын</h1>
+    <button class="btn" id="btn-csv">Экспорт CSV</button>
+  </header>
+
+  <div class="stats-grid" id="stats-grid"></div>
+
+  <div class="main-grid">
+
+    <div class="panel">
+      <p class="panel-title">Добавить трату</p>
+      <div class="form-grid">
+        <div class="field">
+          <label for="f-cat">Категория</label>
+          <select id="f-cat">
+            <option value="food">Еда</option>
+            <option value="transport">Транспорт</option>
+            <option value="entertainment">Развлечения</option>
+            <option value="subscriptions">Подписки</option>
+            <option value="other">Прочее</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-amount">Сумма, ₸</label>
+          <input type="number" id="f-amount" placeholder="0" min="0" step="1">
+        </div>
+        <div class="field">
+          <label for="f-date">Дата</label>
+          <input type="date" id="f-date">
+        </div>
+        <div class="field span2">
+          <label for="f-desc">Описание</label>
+          <input type="text" id="f-desc" placeholder="необязательно">
+        </div>
+      </div>
+      <button class="btn btn-primary form-submit" id="btn-add">Добавить</button>
+    </div>
+
+    <div class="panel">
+      <p class="panel-title">По категориям</p>
+      <div class="chart-wrap">
+        <canvas id="pie-canvas"></canvas>
+        <p id="chart-empty" class="chart-empty" style="display:none">Нет данных</p>
+      </div>
+      <div class="chart-legend" id="chart-legend"></div>
+    </div>
+
+  </div>
+
+  <div class="panel">
+
+    <div class="filters-bar">
+      <button class="filter-btn active" data-period="all">Всё время</button>
+      <button class="filter-btn" data-period="month">Месяц</button>
+      <button class="filter-btn" data-period="week">Неделя</button>
+      <div class="filters-right">
+        <button class="btn" id="btn-clear">Очистить всё</button>
+      </div>
+    </div>
+
+    <div class="cat-chips">
+      <button class="chip active" data-cat="all">Все</button>
+      <button class="chip" data-cat="food">Еда</button>
+      <button class="chip" data-cat="transport">Транспорт</button>
+      <button class="chip" data-cat="entertainment">Развлечения</button>
+      <button class="chip" data-cat="subscriptions">Подписки</button>
+      <button class="chip" data-cat="other">Прочее</button>
+    </div>
+
+    <div class="expense-list" id="expense-list"></div>
+
+  </div>
+
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
