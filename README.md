@@ -11,6 +11,16 @@
 - Экспорт в CSV
 - Данные сохраняются после перезагрузки страницы
 
+
+<img width="1154" height="678" alt="image" src="https://github.com/user-attachments/assets/493b9a31-2f32-48e8-ad8b-ed095268b021" />
+
+<img width="1016" height="488" alt="image" src="https://github.com/user-attachments/assets/d08d1b96-085c-4c9f-8961-bfa22a936d1c" />
+![Uploading image.png…]()
+
+
+
+
+
 ## Структура проекта
 
 ```
