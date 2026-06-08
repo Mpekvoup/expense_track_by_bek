@@ -1,11 +1,11 @@
 :root {
-  --60: #f2f4f1;
-  --30: #1a1f18;
-  --10: #3d8c40;
+  --60: #e0e0df;
+  --30: #242a22;
+  --10: #45a048;
 
-  --60-border: #dde2db;
-  --30-muted:  #4a5247;
-  --10-hover:  #2e6e31;
+  --60-border: #efffe9;
+  --30-muted:  #3b4139;
+  --10-hover:  #38853c;
 
   --font: system-ui, -apple-system, sans-serif;
   --r:   6px;
