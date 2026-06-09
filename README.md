@@ -32,10 +32,6 @@ expense-tracker/
     └── app.js    — контроллер, обработка событий
 ```
 
-## Запуск
-
-Открыть `index.html` в браузере или задеплоить на GitHub Pages.
-
 ## Деплой на Vercel
 
 1. Создать репозиторий `expense-tracker`
